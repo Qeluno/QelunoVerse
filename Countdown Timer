@@ -1,0 +1,21 @@
+# Countdown Timer made by Qeluno
+
+# GitHub: https://github.com/Qeluno/QelunoVerse
+
+import time
+
+
+def countdown(count):
+    while count:
+        mins, secs = divmod(count, 60)
+        timer = "{:02d}:{:02d}".format(mins, secs)
+        print(timer, end="\r")
+        time.sleep(1)
+        count -= 1
+    print("    Countdown Ended")
+
+
+count = input("    Enter the time in seconds: ")
+
+
+countdown(int(count))
