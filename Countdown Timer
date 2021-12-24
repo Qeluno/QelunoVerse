@@ -1,6 +1,8 @@
-# Countdown Timer made by Qeluno
+# Countdown Timer made by Qeluno (Version 1.1)
+
 
 # GitHub: https://github.com/Qeluno/QelunoVerse
+
 
 import time
 
@@ -12,7 +14,7 @@ def countdown(count):
         print(timer, end="\r")
         time.sleep(1)
         count -= 1
-    print("    Countdown Ended")
+    print("    Timer Ended")
 
 
 count = input("    Enter the time in seconds: ")
